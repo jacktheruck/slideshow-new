@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تدشين الكتيبة 108</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="stylesheets/base-min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/plyr.css">
+</head>
+<body>
+<video crossorigin id="player"></video>
+<script type="text/javascript" src="javascripts/plyr.min.js"></script>
+<!--<script type="text/javascript" src="javascripts/plyr.polyfilled.min.js"></script>-->
+<script>
+    const player = new Plyr('#player', {
+          autoplay: true,
+    });
+    player.source = {
+            type: 'video',
+                 sources: [
+                     {
+                         src: '/video/national-song.mp4',
+                         type: 'video/mp4',
+                     },
+            ],
+    };
+    player.play();
+    player.fullscreen.enabled();
+</script>
+</body>
+</html>

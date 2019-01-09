@@ -1,0 +1,53 @@
+@font-face{
+  font-family:'dubai-bold';
+  src: url(dubai-bold.woff);
+  src: url(dubai-bold.ttf);
+}
+@font-face {
+  font-family:'sky';
+  src: url(sky.woff);
+  src: url(sky.ttf);
+}
+
+body {
+  background: indigo;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.sub-title{
+  font-family: sky;
+  font-size: 1.6em;
+}
+
+.sub-slugan{
+  font-family: dubai-bold;
+  font-size: 0.6em;
+}
+
+.slider{
+  width: 100vw;
+  height:100vh;
+  background: crimson;
+  touch-action: none !important;
+
+}
+
+.subslider{
+  width: 100vw;
+  height:100vh;
+  background-size: 100%;
+  background-repeat: round;
+  touch-action: none !important;
+}
+
+.slider-text{
+  /*position: fixed;
+  right: 15%;
+  top: 60%;*/
+  direction: rtl;
+  color: white;
+}
